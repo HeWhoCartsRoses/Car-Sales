@@ -1,12 +1,12 @@
 export const rid = (feature) => {
     return {
-        type: 'remove_feature',
+        type: 'REMOVIE',
         payload: feature
     }
 }
 export const buy = (item) => {
     return {
-        type: 'buy_item',
+        type: 'BUY',
         payload: item
     }
 }

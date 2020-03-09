@@ -15,13 +15,13 @@ const initialState = {
 };
 export const reduce = (state = initialState, action) => {
     switch (action.type) {
-        case 'remove_feature':
+        case 'REMOVIE':
             return {
                 ...state,
                 car: { ...state.car, features: state.car.features.filter((item) => item !== action.payload) },
                 additionalFeatures: [...state.additionalFeatures, action.payload]
             };
-        case 'buy_item':
+        case 'BUY':
             return {
                 ...state,
                 car: { ...state.car, features: [...state.car.features, action.payload] },
